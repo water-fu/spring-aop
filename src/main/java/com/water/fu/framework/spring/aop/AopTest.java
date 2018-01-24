@@ -15,5 +15,7 @@ public class AopTest {
         List list = (List) beanFactory.getBean("bean");
         System.out.println(list.getClass().getName());
         list.add("123");
+        list.remove("123");
+        list.remove("234");
     }
 }
